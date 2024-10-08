@@ -4,6 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        MathLib mathLib = new MathLib();
+        Calculate calc = new Calculate();
+        Triangle triangle = new Triangle();
+        Midterm midterm = new Midterm();
+        Information information = new Information();
         int option;
         do {
             System.out.println("Lütfen çalıştırmak istediğiniz programın numarasını giriniz.");
@@ -11,11 +16,11 @@ public class Main {
             System.out.println("2. Üçgen");
             System.out.println("3. Vize");
             System.out.println("4. Bilgi");
+            System.out.println("5. Math Library");
             option = input.nextInt();
             if ( option == 1 ) {
                 System.out.println("Kaç dersiniz bulunmaktadır?");
                 int l = input.nextInt();
-                Calculate calc = new Calculate();
                 for (int i = 1; i <= l; i++ ) {
                     System.out.println("Lütfen ders ismi giriniz.");
                     String name = input.next();
@@ -30,14 +35,15 @@ public class Main {
                 System.out.println((Math.ceil(calc.score/calc.total*10))/10);
                 System.out.println(calc.noteGrade);
             } else if ( option == 2 ) {
-                Triangle triangle = new Triangle();
                 triangle.triangle();
             } else if ( option == 3 ) {
-                Midterm midterm = new Midterm();
                 midterm.midTermCalculation();
             } else if ( option == 4 ) {
-                Information information = new Information();
                 information.info();
+            } else if ( option == 5 ) {
+                System.out.println("İşlem seçiniz: \n\t1-Power \n\t2-Absolute Value \n\t3-Floor-Ceiling-Round\n\t\t1-Floor\n\t\t2-Ceiling\n\t\t3-Round");
+                double x = input.nextDouble();
+                double y = input.nextDouble();
             }
         } while (option != 0);
 
