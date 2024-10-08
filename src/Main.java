@@ -44,6 +44,10 @@ public class Main {
                 System.out.println("İşlem seçiniz: \n\t1-Power \n\t2-Absolute Value \n\t3-Floor-Ceiling-Round\n\t\t1-Floor\n\t\t2-Ceiling\n\t\t3-Round");
                 double x = input.nextDouble();
                 double y = input.nextDouble();
+            } else if (option == 6) {
+                mathLib.triangleArea(3,4,5);
+            } else if ( option == 7 ) {
+                mathLib.rootOfPolinom(1,-6,8);
             }
         } while (option != 0);
 
