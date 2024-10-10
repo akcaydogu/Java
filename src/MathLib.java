@@ -31,4 +31,17 @@ public class MathLib {
         System.out.println("Root 1 : " + root1 + "\n" + "Root 2 : " + root2);
     }
 
+    void reverseNumber(long a) {
+        String x = "";
+        for (int i = 0; i <= String.valueOf(a).length()-1; i++) {
+            long number = (a / (int) Math.pow(10, i)) % 10;
+            x += "" + number;
+        }
+        System.out.println(x);
+//        int n1 = a % 10;
+//        int n2 = (a / 10) % 10;
+//        int n3 = (a / 100) % 10;
+//        int n4 = (a / 1000) % 10;
+//        System.out.println("" + n1 + "" + n2 + "" + n3 + "" + n4);
+    }
 }

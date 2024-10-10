@@ -1,3 +1,5 @@
+import Amazon.AmazonLabIndex;
+
 import java.util.Scanner;
 
 public class Main {
@@ -48,6 +50,9 @@ public class Main {
                 mathLib.triangleArea(3,4,5);
             } else if ( option == 7 ) {
                 mathLib.rootOfPolinom(1,-6,8);
+            } else if ( option == 8 ) {
+                mathLib.reverseNumber(213123123312232L);
+
             }
         } while (option != 0);
 
