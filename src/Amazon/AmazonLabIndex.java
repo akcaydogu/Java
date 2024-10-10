@@ -3,6 +3,7 @@ package Amazon;
 public class AmazonLabIndex {
 
     public static void main(String[] args) {
+
         String bookTitle = "The Adventures of Captain Fantastic and the Magical Unicorn";
         String bookTitle2 = "Java programming is fun and educational";
         int titleLength = bookTitle.length();
