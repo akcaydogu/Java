@@ -1,4 +1,4 @@
-package Amazon;
+package Amazon.Module1;
 
 public class AmazonLabIndex2 {
 
